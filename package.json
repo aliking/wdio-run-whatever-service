@@ -1,0 +1,45 @@
+{
+  "name": "wdio-run-whatever-service",
+  "version": "0.0.1",
+  "description": "WebdriverIO service for running arbitrary shell commands before, during and after tests",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "gulp",
+    "test": "jest",
+    "lint": "./node_modules/.bin/prettier *.js **/*.js --list-different",
+    "format": "./node_modules/.bin/prettier *.js **/*.js --write"
+  },
+  "jest":{
+    "verbose": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliking/wdio-run-whatever-service.git"
+  },
+  "files": [
+    "index.js",
+    "launcher.js",
+    "build"
+  ],
+  "keywords": [
+    "webdriverio",
+    "wdio",
+    "test",
+    "wdio-service"
+  ],
+  "author": "Ali King <ali@animoto.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aliking/wdio-test-service/issues"
+  },
+  "homepage": "https://github.com/aliking/wdio-run-whatever-service#readme",
+  "dependencies": {
+    "eslint": "^5.4.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-buble": "^0.7.0",
+    "gulp-cli": "^1.2.2",
+    "jest": "^23.5.0"
+  }
+}
